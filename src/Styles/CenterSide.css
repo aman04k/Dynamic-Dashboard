@@ -1,0 +1,337 @@
+.center-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.countdown {
+  color: #5a5a5a;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.avg-hours {
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 27px;
+}
+
+.avg-hours-header {
+  display: flex;
+  gap: 20px;
+}
+
+.avg-hours h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.avg-hours p {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #272525;
+}
+
+.team-percentage {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-percentage h2 {
+  margin: 0;
+  color: black;
+}
+
+.grafh-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #f4f9fc;
+  flex-wrap: wrap;
+}
+
+.percentage {
+  background: #dff2e1;
+  color: #2c9c46;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.hours-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f4f9fc;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 524px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container-center {
+  width: 100%;
+  height: 40vh;
+}
+
+.hours-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 40px;
+}
+.upcoming-events {
+  background-color: white;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 8px;
+  padding: 16px;
+  flex-direction: column;
+  margin-right: 5px;
+  max-width: 370px;
+  margin-top: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-events h3 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #333;
+  margin-right: 32%;
+}
+
+.upcoming-events li {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.upcoming-events .event-time {
+  font-weight: bold;
+  color: #0062cc;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0062cc;
+}
+
+.extra-info {
+  width: 90%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-info {
+  margin-bottom: 20px;
+}
+
+.onsite,
+.remote {
+  margin-bottom: 10px;
+}
+
+.onsite span,
+.remote span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.average-hours {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  /* margin-top: 10px; */
+}
+
+.stats-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.total-employees,
+.hiring-statistics {
+  flex: 1;
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total-employees h3,
+.hiring-statistics h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.team-breakdown p {
+  margin: 5px 0;
+}
+
+.team-type {
+  margin-top: 12px;
+}
+
+.admin-icon {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.team-type span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.team-type span b {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.talent-profiles {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.talent-profiles img {
+  width: 60px;
+  height: 70px;
+  border-radius: 30%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.talent-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.join-call-btn {
+  background: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .hours-chart {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .grafh-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .team-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-percentage {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .center-side {
+    padding: 15px;
+  }
+
+  .hours-chart {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .grafh-container {
+    gap: 15px;
+  }
+
+  .team-info {
+    margin-bottom: 15px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .join-call-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .avg-hours h1 {
+    font-size: 1.4rem;
+  }
+
+  .team-tracker-center p {
+    font-size: 1.2rem;
+  }
+
+  .profile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .join-call-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .talent-profiles img {
+    width: 50px;
+    height: 60px;
+  }
+
+  .total-employees,
+  .hiring-statistics {
+    padding: 10px;
+    width: 100%;
+  }
+}

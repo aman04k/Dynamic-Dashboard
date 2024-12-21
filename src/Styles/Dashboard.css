@@ -1,0 +1,72 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; 
+  grid-gap: 20px;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.leftSide, .centerSide, .rightSide {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  overflow: hidden;
+   
+}
+
+.centerSide {
+  grid-column: span 1; 
+  padding: 0;
+  
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    grid-template-columns: 1fr; 
+    grid-gap: 15px;
+  }
+
+  .leftSide, .centerSide, .rightSide {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  .leftSide, .centerSide, .rightSide {
+    border-radius: 10px;
+    margin-left: -19px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 8px;
+  }
+
+  .leftSide, .centerSide, .rightSide {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.profile-card {
+  width: 100%; 
+  padding: 10px;
+}
+
+.experience-badge {
+  margin-top: 30%;
+}
+
+.chart-container {
+  height: 120px; 
+}

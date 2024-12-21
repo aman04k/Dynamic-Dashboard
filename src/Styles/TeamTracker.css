@@ -1,0 +1,105 @@
+.team-tracker-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .team-tracker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #888888;
+    font-size: 14px;
+  }
+  
+  .team-tracker-btn {
+    background: none;
+    border: none;
+    color: #888888;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .team-tracker-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .team-tracker-chart {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto;
+  }
+  
+  .team-tracker-arc {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(75px at center);
+    transform: rotate(-90deg);
+  }
+  
+  .team-tracker-arc-segment {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    transform-origin: 100% 50%;
+  }
+  
+  .team-tracker-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-tracker-total {
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .team-tracker-label {
+    font-size: 12px;
+    color: #221b1b;
+    font-weight: 580;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+  
+  .team-tracker-legend {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .team-tracker-legend-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .team-tracker-legend-color {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  

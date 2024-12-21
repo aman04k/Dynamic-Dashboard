@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: #62c765;
+  margin-right: 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #555;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links .active {
+  background-color: #62c765;
+  color: #fff;
+}
+
+.nav-links li:hover {
+  background-color: #62c765;
+  color: #fff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .search-bar {
+    display: none; /* Hide search bar on tablets */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+  }
+
+  .nav-links {
+    display: none; /* Initially hide nav links */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show nav links when toggled */
+  }
+
+  .navbar-left {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 20px; /* Adjust logo size for small screens */
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}

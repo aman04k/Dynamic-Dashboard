@@ -1,0 +1,196 @@
+.salaries-container {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: auto;
+  padding: 16px;
+  color: #333;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* Centering the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.add-employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 180px;
+  transition: background-color 0.3s ease;
+}
+
+.add-employee:hover {
+  background-color: #0056b3;
+}
+
+.add-employee p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.employee-list {
+  margin-top: 10px;
+}
+
+.employee-item {
+  display: flex;
+  flex-direction: row; /* Default row */
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.employee-item:hover {
+  transform: translateY(-5px);
+}
+
+.employee-details {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.amount,
+.date {
+  font-size: 14px;
+  color: #777;
+}
+
+.update-status {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-status:hover {
+  background-color: #0056b3;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.status.waiting {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.done {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive Design */
+
+/* Medium Screens */
+@media (max-width: 1024px) {
+  .employee-item {
+    flex-direction: row; /* Keep row layout */
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .employee-item {
+    flex-direction: row; /* Keep row layout */
+  }
+
+  .employee-details {
+    flex-direction: row; /* Align content properly */
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .employee-item {
+    flex-direction: row; /* Maintain same layout as desktop */
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .amount,
+  .date {
+    font-size: 14px;
+  }
+
+  .update-status {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .status {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

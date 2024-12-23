@@ -5,7 +5,7 @@ import { IoMdNotifications, IoMdMail, IoMdFlower, IoMdMenu } from "react-icons/i
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();  // To track the current route
+  const location = useLocation();  
   const [activeItem, setActiveItem] = useState("Dashboard");
 
   const toggleMenu = () => {
@@ -67,12 +67,13 @@ const Navbar = () => {
             className={activeItem === "Documents" ? "active" : ""}
             onClick={() => handleClick("Documents")}
           >
-            <Link to="#">Documents</Link>
+            <Link to="/documents">Documents</Link>
           </li>
         </ul>
       </div>
       <div className="navbar-right">
         <input type="text" placeholder="Search ..." className="search-bar" />
+        
         <div className="icon"><IoMdMail /></div>
         <div className="icon"><IoMdNotifications /></div>
         <div className="nav-profile">

@@ -6,10 +6,6 @@ import { FaPlusSquare } from "react-icons/fa";
 const RightSide = ({ employees, setEmployees }) => {
   const navigate = useNavigate();
 
-  const handleUpdateClick = (employee) => {
-    navigate("/update-profile", { state: { employee } });
-  };
-
   const handleAddEmployee = () => {
     const newEmployee = {
       id: employees.length + 1,
@@ -22,6 +18,15 @@ const RightSide = ({ employees, setEmployees }) => {
     setEmployees([...employees, newEmployee]);
   };
 
+  const handleChangeUserDetails = () => {
+    if (employees.length > 0) {
+      // Get the last employee ID dynamically
+      const lastEmployeeId = employees[employees.length - 1].id;
+      navigate(`/documents/${lastEmployeeId}`); // Navigate to `documents/:id`
+    } else {
+      alert("No employees available to update!");
+    }
+  };
 
   return (
     <div className="salaries-container">
@@ -32,6 +37,7 @@ const RightSide = ({ employees, setEmployees }) => {
       </div>
       <h3>Payout Monthly</h3>
       <h2>Salaries and Incentives</h2>
+      <button className="add-employee"  onClick={handleChangeUserDetails}>Change the User Details</button>
 
       <div className="employee-list">
         {employees.map((employee) => (
@@ -46,12 +52,6 @@ const RightSide = ({ employees, setEmployees }) => {
                 <p className="amount">{employee.amount}</p>
                 <p className="date">{employee.date}</p>
               </div>
-              <button
-                className="update-status"
-                onClick={() => handleUpdateClick(employee)}
-              >
-                Update
-              </button>
             </div>
             <div className={`status ${employee.status.toLowerCase()}`}>
               {employee.status}

@@ -48,7 +48,6 @@ const ReduxCalendar = () => {
     // Dispatch the event to the Redux store
     dispatch(addEvent({ date: localDate, name: eventName }));
     setEventName("");
-    // Close the popup after adding the event
     setShowPopup(false); 
     alert("Event added successfully!");
     navigate("/")
